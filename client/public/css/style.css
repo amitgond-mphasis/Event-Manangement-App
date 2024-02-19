@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    background-image: url("https://whataftercollege.com/wp-content/uploads/2019/03/Cover-image-5-1024x535.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+header{
+    height: 60px;
+    /* background-color: #F2F2F2; */
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 0pc 10px;
+}
+#grow{
+    flex-grow: 1;
+    text-align: center;
+}
+header>button{
+    all: none;
+    border-style: none;
+    font-size: 20px;
+    padding: 10px;
+    color: #212529;
+    background-color: transparent;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+table{
+    width: 80vw;
+    /* text-align: left; */
+    border-collapse: collapse;
+}
+tr{
+    /* border-bottom: 1px #e4e3e3 solid; */
+    border-bottom: 1px #0e0d0d solid;
+    height: 40px;
+    vertical-align: top;
+}
+#tableHeadings{
+    vertical-align: middle;
+}
+.name{
+    /* width: 22%; */
+}
+.age{
+    /* width: 8%; */
+}
+.state{
+    /* width: 40%; */
+}
+.functions{
+    width: 0%;
+    /* height: 10%; */
+    /* display: flex;
+    justify-content: space-between; */
+ 
+}
+td, th{
+    padding: 5px;
+}
+th{
+    /* background-color: #e2e2e7; */
+    background-color:pink
+
+}
+tr:nth-child(odd){
+    /* background-color: #f8f8f8; */
+    background-color:skyblue
+
+}
+
+tr:nth-child(even){
+    /* background-color: #f8f8f8; */
+    background-color: yellowgreen;
+
+}
+td>button{
+    
+    height: 60px;
+    border-collapse: separate;
+    z-index: 2;
+}
+.edit{
+    width: 50%;
+    height: 70%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-style: none;
+    /* background-color: #0dcaf0; */
+    background-color: green
+    
+}
+.deleteB{
+    width: 50%;
+    height: 70%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-style: none;
+    background-color:red;
+}
+#addUserForm{
+    display: flex;
+    flex-direction: column;
+}
+#addUserForm> input, #addUserForm>select{
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    height: 40px;
+}
+#addUserForm>button{
+    margin: 15px 0px;
+    height: 40px;
+}
+
+
+#editUserForm{
+    display: flex;
+    flex-direction: column;
+}
+#editUserForm> input, #editUserForm>select{
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    height: 40px;
+}
+#editUserForm>button{
+    margin: 15px 0px;
+    height: 40px;
+}
+
+
+
+
+.close{
+    background-color: white;
+    border-style: none;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+#searchBar{
+    border: 1px solid black;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 4px;
+    width: 50%;
+    visibility: hidden;
+    border-right-style: none;
+}
+#searchIcon{
+    border: 1px solid black;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 8px;
+    width: 40px;
+    visibility: hidden;
+    border-left-style: none;
+}

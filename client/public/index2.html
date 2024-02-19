@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html><head>
+    <title>
+        Participants of Functions
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./lib/fontawesome/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./js/script2.js"></script>
+
+    <header style="display: flex;justify-content: space-between;">
+        <p style="font-size:x-large;font-weight: bold;"> CCM </p>
+        <!-- <a href="./index.html">Competitions</a> -->
+        <a href="./index3.html"  style="text-decoration: none; font-weight: bold;">Rate Participants</a>
+        <!-- <a href="./result.html">Results</a> -->
+
+        <!-- <div id="grow">
+            <input type="text" id="searchBar" placeholder="Enter name to search.."><i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        </div> -->
+        
+       
+
+        <div class="modal fade show" id="modalAddUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <form id="addUserForm">
+                      <input type="text" id="inputComp" placeholder="Competetion Name">
+                        <input type="text" id="inputName" placeholder="Participant Name">
+                        
+
+                        
+                        <!-- <input type="number" id="inputAge" placeholder="Type" max="100" min="0"> -->
+                        <!-- <select id="inputAge">
+                          <option disabled="" selected="">Type</option>
+                          <option>Solo</option>
+                          
+                            <option>Group</option>
+                            <option>Song1</option>
+                            <option>Song2</option>
+                        </select> -->
+                        <!-- <select id="inputState">
+                            <option disabled="" selected="">Competetion Name</option>
+                            <option>Dance1</option>
+                            <option>Dance2</option>
+                            <option>Dance3</option>
+                            <option>Song1</option>
+                            <option>Song2</option>
+                            <option>Song3</option>
+                            <option>Song4</option>
+                            <option>Dance4</option>
+                            <option>Dance5</option>
+                            <option>Song5</option>
+                          </select> -->
+
+                            <!-- <option>Chhattisgarh</option>
+                            <option>Dadra and Nagar Haveli and Daman &amp; Diu</option>
+                            <option>Delhi</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jammu &amp; Kashimr</option>
+                            <option>Jharkand</option> -->
+                            <!-- <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Ladakh</option>
+                            <option>Lakshadweep</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option> -->
+                            <!-- <option>Puducherry</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telanagana</option>
+                            <option>Tripura</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option> -->
+                       
+                        <button type="button"  onclick="addUser()" class="btn btn-primary" id="addUserButton">Add Participants</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade show" id="modalEditUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                  <form id="editUserForm">
+                      <input type="text" id="editInputName" placeholder="ParticipantName">
+                      <!-- <select id="editInputAge">
+                        <option disabled="" selected="">Type</option>
+                        <option>Solo</option>
+                        <option>Group</option>
+                      </select> -->
+                      <!-- <input type="number" id="editInputAge" placeholder="Age" max="100" min="0"> -->
+                      <!-- <select id="editInputState">
+                          <option disabled="" selected="">CompetetionName</option>
+                          <option>Dance1</option>
+                            <option>Dance2</option>
+                            <option>Dance3</option>
+                            <option>Song1</option>
+                            <option>Song2</option>
+                            <option>Song3</option>
+                            <option>Song4</option>
+                            <option>Dance4</option>
+                            <option>Dance5</option>
+                            <option>Song5</option> -->
+                          <!-- <option>Andaman and Nicobar Islands</option>
+                          <option>Andhra Pradesh</option>
+                          <option>Arunachal Pradesh</option> -->
+                          <!-- <option>Assam</option>
+                          <option>Bihar</option>
+                          <option>Chandigarh</option>
+                          <option>Chhattisgarh</option>
+                          <option>Dadra and Nagar Haveli and Daman &amp; Diu</option>
+                          <option>Delhi</option>
+                          <option>Goa</option>
+                          <option>Gujarat</option>
+                          <option>Haryana</option> -->
+                          <!-- <option>Himachal Pradesh</option>
+                          <option>Jammu &amp; Kashimr</option>
+                          <option>Jharkand</option>
+                          <option>Karnataka</option>
+                          <option>Kerala</option>
+                          <option>Ladakh</option>
+                          <option>Lakshadweep</option>
+                          <option>Madhya Pradesh</option>
+                          <option>Maharashtra</option>
+                          <option>Manipur</option>
+                          <option>Meghalaya</option>
+                          <option>Mizoram</option> -->
+                          <!-- <option>Nagaland</option>
+                          <option>Odisha</option>
+                          <option>Puducherry</option>
+                          <option>Punjab</option>
+                          <option>Rajasthan</option>
+                          <option>Sikkim</option>
+                          <option>Tamil Nadu</option>
+                          <option>Telanagana</option>
+                          <option>Tripura</option>
+                          <option>Uttar Pradesh</option>
+                          <option>Uttarakhand</option>
+                          <option>West Bengal</option> -->
+                      </select>
+                      <button type="button"  onclick="updateUser()" class="btn btn-primary" id="editUserButton">Update Participants</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+
+       
+        
+    </header>
+    <main>
+      <div style="display: flex;flex-direction: column;">
+
+      <p style="font-size:large;font-weight: bold;text-align: center;color: white;">ALL COMPETITIONS WITH PARTICIPANTS LIST</p>
+      <!-- <button id="addUser" type="button"><i class="fa-solid fa-user-plus"></i></button> -->
+      <button id="addUser" type="button" class="btn btn-primary" style="width: 200px;height: 30px; margin-left: 450px; margin-bottom: 30px; display: flex;justify-content: center;align-items: center;">Add Participants</button>
+        <table id="table">
+
+          <!-- for demo -->
+            <!-- <tr id="tableHeadings">
+                <th class="name">Name</th>
+                <th class="age">Age</th>
+                <th class="state">State</th>
+                <th class="functions">Functions</th>
+            </tr> -->
+            <!-- <tr class="user" id="user1">
+                <td class="name">Hari</td>
+                <td class="age">49</td>
+                <td class="state">Himachal Pradesh</td>
+                <td class="functions">
+                    <button class="edit" onclick="editUser();" type="button" id="1"><i class="fa-solid fa-pen-clip"></i></button><button class="deleteB" onclick="deleteUser();"type="button" id="1"><i class="fa-solid fa-trash-can"></i></button>
+                </td>
+            </tr> -->
+            
+        </table>
+      </div>
+      </main>
+    <div class="modal" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Confirm the User</h5>
+              <button type="button" class="close deleteCancel" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5><b>Deleting: <span id="userDeleted"></span></b></h5>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger confirmDelete" data-bs-dismiss="modal">Delete</button>
+              <button type="button" class="btn btn-secondary deleteCancel" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
